@@ -1,14 +1,20 @@
-function outer(){
-    let counter = 0
+function outer() {
+  let counter = 0;
 
-    function inner(){
-        counter++
-        console.log(counter)
-    }
+  function inner() {
+    counter++;
+    console.log(counter);
+  }
 
-    return inner
+  return inner;
 }
 
-const newfunc = outer()
+const newfunc = outer();
 
-const newfunc2 = outer()
+const newfunc2 = outer();
+
+newfunc();
+newfunc();
+newfunc();
+
+newfunc2();
